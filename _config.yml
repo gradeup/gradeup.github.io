@@ -1,0 +1,25 @@
+# Dependencies
+markdown:         kramdown
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            GradeUp
+tagline:          'Study more, score better'
+description:      'GradeUp Engineering Blog'
+url:              gradeup.github.io
+baseurl:          /
+
+author:
+  name:           'GradeUp Dev'
+  url:            mailto:developer@gradeup.co
+
+paginate:         5
+paginate_path: "page:num"
+
+github:
+  repo:           https://github.com/gradeup/gradeup.github.io
+
+gems: [jekyll-paginate]
