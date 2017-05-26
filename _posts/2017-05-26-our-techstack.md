@@ -37,7 +37,7 @@ It acts as a caching backend and stores our session related data.
 
 ### CloudFlare
 
-We use Cloudflare as DNS service along with its awesome CDN capabilities. Images stored on S3 are served by Cloudflare CDN.
+We use Cloudflare as DNS service along with its awesome CDN capabilities. Images stored on S3 are served by Cloudflare CDN. It also acts as a firewall and prevents our server from unauthorized access.
 
 ### RabbitMQ
 
