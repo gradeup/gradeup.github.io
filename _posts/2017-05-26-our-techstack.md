@@ -1,9 +1,9 @@
 ---
 layout: post
-title: GradeUp Engineering
+title: Gradeup Engineering
 ---
 
-GradeUp's mission is to make learning process significantly more collaborative and engaging, and hence more impactful. To make that possible we leverage some of the best open source tools and technologies. Then we bundle it up neatly as a platform that enables learners to interact and learn with each other.
+Gradeup's mission is to make learning process significantly more collaborative and engaging, and hence more impactful. To make that possible we leverage some of the best open source tools and technologies. Then we bundle it up neatly as a platform that enables learners to interact and learn with each other.
 
 We consistently opt for promising new technologies that would deliver an awesome experience over more mature alternatives.
 

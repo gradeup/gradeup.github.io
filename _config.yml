@@ -6,14 +6,14 @@ highlighter:      pygments
 permalink:        pretty
 
 # Setup
-title:            GradeUp
+title:            Gradeup
 tagline:          'Study more, score better'
-description:      'GradeUp Engineering Blog'
+description:      'Gradeup Engineering Blog'
 url:              gradeup.github.io
 baseurl:          /
 
 author:
-  name:           'GradeUp Dev'
+  name:           'Gradeup Dev'
   url:            mailto:developer@gradeup.co
 
 paginate:         5
