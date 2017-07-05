@@ -176,6 +176,15 @@ a.sidebar-nav-item:focus {
 
 /* Base16 (http://chriskempson.github.io/base16/#default) */
 
+/* Gradeup */
+.gradeup-theme .sidebar {
+  background-color: #45b97c;
+}
+.gradeup-theme .content a,
+.gradeup-theme .related-posts li a:hover {
+  color: #45b97c;
+}
+
 /* Red */
 .theme-base-08 .sidebar {
   background-color: #ac4142;
