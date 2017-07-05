@@ -23,6 +23,9 @@ To run server, simply write
 jekyll serve
 ```
 
+
+### Common issues during installation
+
 In case you run into the following error on Mac, for ruby version <2.1.0: 
 ERROR:  Error installing jekyll:
 liquid requires Ruby version >= 2.1.0.
