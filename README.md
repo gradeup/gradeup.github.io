@@ -22,3 +22,14 @@ To run server, simply write
 ```
 jekyll serve
 ```
+
+In case you run into the following error on Mac, for ruby version <2.1.0: 
+ERROR:  Error installing jekyll:
+liquid requires Ruby version >= 2.1.0.
+Upgrade the ruby version using:
+
+```
+\curl -sSL https://get.rvm.io | bash -s stable
+rvm install ruby-2.4.1
+rvm use ruby-2.4.1 --default
+```
