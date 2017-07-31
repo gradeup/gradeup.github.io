@@ -10,7 +10,7 @@ title:            Gradeup
 tagline:          'Study more, score better'
 description:      'Gradeup Engineering Blog'
 url:              gradeup.github.io
-baseurl:          /
+baseurl:          ''
 
 author:
   name:           'Gradeup Dev'
