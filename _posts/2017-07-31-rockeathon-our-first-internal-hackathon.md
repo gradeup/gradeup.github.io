@@ -58,11 +58,11 @@ During a fun-filled demo session, the products presented were all so good that i
 
 Finally based on the votes received, we decided team __Starks__ as the winners and team __ImLi__ as the runners-up. We also got following amazing products at the end of Rockeathon.
 
-* A internal food ordering app
+* An internal food ordering app
 
 * An android app for our internal tools
 
-* A Image Library
+* An Image Library
 
 * An android Lock Screen app
 
