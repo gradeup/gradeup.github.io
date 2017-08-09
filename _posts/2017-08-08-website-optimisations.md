@@ -25,7 +25,7 @@ Critical CSS is the subset of the overall CSS required for the webpage that help
 Javascript is the file that helps user in interacting with the webpage. But adding more and more javascript slows down the rendering of the webpage. There are ways to avoid javascripts acting as a render blocker :
 
 * #### Async or Defer the scripts
-Async downloads the file during HTML parsing but will act as a render blocing to execute it when file is downloaded. Defer downloads the file during HTML parsing and will execute the file after the parsing is completed.
+Async downloads the file during HTML parsing but will act as a render blocking to execute it when file is downloaded. Defer downloads the file during HTML parsing and will execute the file after the parsing is completed.
 ```
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript" defer="true"></script>
 ```
@@ -61,7 +61,7 @@ When your application is strictly server side rendered then you really need to d
 
 The more the size of the data, the more time it takes for the browser to render the page thereby effecting user's experience. Hence, lowering the amount of content will make the page render faster.
 
-### Minified of Javascript and CSS
+### Minified form of Javascript and CSS
 
 Add the javascript or css files in minified form which reduces the size of the files to be loaded.
 The lower the size of the file, the lesser time it takes to download the file for the webpage. 
