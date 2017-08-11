@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Experience Fifth Elephant Conference 2017
+title: Experience&#58; Fifth Elephant Conference 2017
 ---
 
 At Gradeup, we organize weekly engineering sessions, where in our whole engineering team shares their experiences, rants about some technology or having a knowledge session over some topic.
@@ -95,4 +95,4 @@ To re-rank the results and decide which results are similar, cosine similarity i
 
 The talk can be found [here](https://fifthelephant.talkfunnel.com/2017/80-augmenting-solrs-nlp-capabilities-with-deep-learni)
 
-Note: All Stretching Sessions were really fun.
+PS: All Stretching Sessions were really fun.
