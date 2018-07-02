@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Warming Up The Cold Start&#58; How To Reduce Cold Startup Time 101 
+title: Warming Up The Cold Start&#58; How To Reduce Cold Startup Time Of Your Android App 
 ---
 
 Have you ever had your patience tested by apps that cheekily keep flashing their logos at you for a moment too long, while you just cannot wait to order food or book a cab or pay the cab driver and rush to work? If that sounds like you, you too have been a victim of poor **cold startup time**, and unless you want your app to add to that growing pool of the digitally downtrodden, read on!
 
-#### Cold start? Enlighten me, please!
+#### Cold Start? Enlighten me, please!
 Cold start refers to an app starting from a scratch, that is the time taken from the moment the code is initialised till the UI is responsive to the user. It happens in cases such as your app is being launched for the first time since the device booted, or since the system killed the app. Needless to say, the lesser the cold startup time, the better the user experience.
 
 Android developers provides a comprehensive explanation of app startup time [here](https://developer.android.com/topic/performance/vitals/launch-time).
@@ -28,14 +28,18 @@ To check how your Android app is performing in comparison to other apps, go to *
 
 In Android 4.4 and higher, logcat includes an output line containing a value called **"Displayed"**. This value represents the amount of time elapsed between launching the process and finishing drawing the corresponding activity on the screen. The reported log line looks similar to the following example:
 
-**ActivityManager: Displayed com.android.app/.StartupTiming: +3s534ms**
+```
+ ActivityManager: Displayed com.android.app/.StartupTiming: +3s534ms 
+```
 
 P.S. if you are tracking the time in Android studio, make sure you disable filters in your logcat view because it is the system server, and not the app, that serves this log.
 
 
-Don't be confused if the "Displayed" line in the logcat output contains an additional field for "total" time. For example:
+Don't be confused if the "Displayed" line in the logcat output contains an additional field for **total** time. For example:
 
-**ActivityManager: Displayed com.android.gradeup/.StartupTiming: +3s534ms (total +1m22s643ms)**
+```
+ ActivityManager: Displayed com.android.gradeup/.StartupTiming: +3s534ms (total +1m22s643ms) 
+```
 
 Here, the first time measurement is only for the activity that was first drawn and the "total" time measurement begins at the app process start, and could include another activity that was started first but did not display anything to the screen (for example a splash screen). This extra measurement is shown when there is a difference between the single activity and total startup times.
 
