@@ -126,6 +126,6 @@ Now that you have analysed your app and zeroed in the problematic areas, let's s
 
 
 
-Thats all, folks! Needless to say, there are many other factors that impact your app's start up performance like the memory allocation of your app or the efficiency of your mobile device but by employing the above mentioned technique we managed to reduce our startup time by 64%! Cheers!
+Thats all, folks! Needless to say, there are many other factors that impact your app's start up performance like the memory allocation of your app or the efficiency of your mobile device but by employing the above mentioned technique we at **Gradeup** managed to reduce our startup time by a whooping 64%! Cheers!
 
 
