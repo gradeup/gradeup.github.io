@@ -14,28 +14,28 @@ Android developers provides a comprehensive explanation of app startup time [her
 
 #### How much is too much?
 
-For cold start, anything above 5 seconds is considered excessive.
+For cold start, anything above **5 seconds** is considered excessive.
 
 
 
 #### How do I track the cold start performance of my app?
 
-To check how your Android app is performing in comparison to other apps, go to Play Console > your app > Android Vitals > App Startup Time.
+To check how your Android app is performing in comparison to other apps, go to **Play Console > your app > Android Vitals > App Startup Time.**
 
 
 
 #### And how do I get the exact number?
 
-In Android 4.4 and higher, logcat includes an output line containing a value called "Displayed". This value represents the amount of time elapsed between launching the process and finishing drawing the corresponding activity on the screen. The reported log line looks similar to the following example:
+In Android 4.4 and higher, logcat includes an output line containing a value called **"Displayed"**. This value represents the amount of time elapsed between launching the process and finishing drawing the corresponding activity on the screen. The reported log line looks similar to the following example:
 
-ActivityManager: Displayed com.android.app/.StartupTiming: +3s534ms
+**ActivityManager: Displayed com.android.app/.StartupTiming: +3s534ms**
 
 P.S. if you are tracking the time in Android studio, make sure you disable filters in your logcat view because it is the system server, and not the app, that serves this log.
 
 
 Don't be confused if the "Displayed" line in the logcat output contains an additional field for "total" time. For example:
 
-ActivityManager: Displayed com.android.gradeup/.StartupTiming: +3s534ms (total +1m22s643ms)
+**ActivityManager: Displayed com.android.gradeup/.StartupTiming: +3s534ms (total +1m22s643ms)**
 
 Here, the first time measurement is only for the activity that was first drawn and the "total" time measurement begins at the app process start, and could include another activity that was started first but did not display anything to the screen (for example a splash screen). This extra measurement is shown when there is a difference between the single activity and total startup times.
 
@@ -53,7 +53,7 @@ Before we delve into the code and start digging it for prospective flaws, let's 
 
 * **Hierarchy Viewer**: Hierarchy Viewer  allows you to measure the layout speed for each view in your layout hierarchy. It can help you find performance bottlenecks caused by the structure of your view hierarchy.
 
-    P.S. If you're using Android Studio 3.1 or later, you should instead use Layout Inspector to inspect your app's view hierarchy at runtime. 
+    P.S. If you're using Android Studio 3.1 or later, you should instead use **Layout Inspector** to inspect your app's view hierarchy at runtime. 
 
 * **Debug GPU Overdraw tool**: It uses color-coding to show the number of times your app draws each pixel on the screen. The higher this count, the more likely it is that overdraw affects your app's performance.
 
@@ -77,7 +77,7 @@ Now that you have analysed your app and zeroed in the problematic areas, let's s
 
 * **Use Dagger2 for dependency injection**: Dagger is a fully static, compile-time dependency injection framework for both Java and Android. It implements the dependency injection design pattern without the burden of writing the boilerplate and aims to address many of the development and performance issues that have plagued reflection-based solutions.
 
-    You can refer to [this](https://medium.com/@harivigneshjayapalan/dagger-2-for-android-beginners-dagger-2-part-i-f2de5564ab25) article for a detailed explanation of Dagger 2 and its usage
+    You can refer to [this](https://medium.com/@harivigneshjayapalan/dagger-2-for-android-beginners-dagger-2-part-i-f2de5564ab25) article for a detailed explanation of Dagger 2 and its usage.
 
 
 * **Using Handler with delay**: Now this one might sound like a hack but it does wonders to your app startup performance- in cases where there is some piece of lethargic code which you cannot afford to shift from the main thread, you can put in in a Handler and use the postDelayed method, adding an appropriate delay(100 to 200ms should do just fine). This takes the weight off the onCreate and your app launches much quicker than before ,with unnoticeable delay in the execution of the delayed method.
