@@ -8,7 +8,7 @@ Have you ever had your patience tested by apps that cheekily keep flashing their
 #### Cold Start? Enlighten me, please!
 Cold start refers to an app starting from a scratch, that is the time taken from the moment the code is initialised till the UI is responsive to the user. It happens in cases such as your app is being launched for the first time since the device booted, or since the system killed the app. Needless to say, the lesser the cold startup time, the better the user experience.
 
-Android developers provides a comprehensive explanation of app startup time [here](https://developer.android.com/topic/performance/vitals/launch-time).
+Developer.android provides a comprehensive explanation of app startup time [here](https://developer.android.com/topic/performance/vitals/launch-time).
 
 
 
